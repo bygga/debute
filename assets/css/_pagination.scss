@@ -1,0 +1,52 @@
+/*====================================================
+	pagination
+====================================================*/
+.pagination-wrap {
+  max-width: 700px;
+  margin: 0px auto;
+  background: $light-background-color;
+  padding: 27px 0;
+  border-top: 1px solid #f0f0f0;
+}
+.pagination-wrap .pagination {
+  display: block;
+  min-height: 24px;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  font-style: italic;
+  color: $light-text-color;
+}
+.pagination-wrap .pagination .newer-posts {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.pagination-wrap .pagination .older-posts {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.pagination-wrap .pagination a {
+  color: $title-color;
+  font-style: italic;
+}
+.pagination-wrap .pagination a:hover {
+  color: $link-color;
+}
+
+@media (max-width: 767px) {
+  .pagination-wrap {
+    max-width: 90%;
+  }
+}
+@media (max-width: 420px) {
+  .pagination-wrap .pagination .page-number {
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0;
+    filter: alpha(opacity=(0));
+  }
+}

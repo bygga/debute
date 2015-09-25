@@ -1,0 +1,15 @@
+{% for category_l in site.cat_widget %}
+{% assign category = category_l.title | downcase %}
+<div class="widget">
+	<div class="category-box">
+		<h4 class="{{ category }}">{{ category_l.title }}</h4>
+	</div>
+	<div class="content recent-post">
+		<ul class="recent-single-post clearfix">
+			{% for post in site.categories.[category] %} 
+				<li><a href="{{ post.url }}" class="post-title">{{ post.title }}</a> </li> 
+			{% endfor %} 
+		</ul>
+	</div>
+</div>
+{% endfor %}

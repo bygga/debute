@@ -1,0 +1,123 @@
+.big-logo {
+  background-color: $logo-bg-color;
+  max-width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 30px 15px;
+  
+  h3 {
+    font-size: 80px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.1em;
+  }
+  h4 {
+    font-size: 26px;
+    color: white;
+  }
+}
+
+/*====================================================
+	navbar styles
+====================================================*/
+.main-navbar {
+  background: $light-background-color;
+  border: 1px solid #b2b2b2;
+  border-bottom: 2px solid #333;
+  margin-bottom: 0px;
+}
+.navbar-collapse {
+  padding: 0px;
+}
+.navbar {
+  border-radius: 0;
+}
+.main-navbar .main-nav {
+  position: relative;
+}
+.navbar-nav {
+  margin-right: 36px;
+}
+.navbar-nav > li > a {
+  font-size: 14px;
+  font-family: $title-font;
+  text-transform: uppercase;
+  border-right: 1px solid #b2b2b2;
+  padding: 1em 1.7em;
+  color: $title-color;
+  font-weight: bold;
+}
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  background: #f2f2f2;
+}
+.navbar-nav > li.current-menu-item > a {
+  background: #f2f2f2;
+}
+.navbar-toggle {
+  border: 1px solid #b0b0b0;
+  margin: 23px 50px;
+  padding: 13px 15px;
+}
+.navbar-toggle .icon-bar {
+  background: #b0b0b0;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li:last-child {
+    margin-right: 0;
+  }
+  .navbar-nav > li:first-child {
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  .nav {
+    display: block;
+  }
+  .navbar-fixed-top .navbar-collapse {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+}
+@media (max-width: 991px) {
+  .navbar-collapse {
+    border-top: 1px solid #f0f0f0;
+  }
+  .navbar-nav {
+    margin-right: -15px;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-brand {
+    padding: 27px 0 27px 0px;
+  }
+  .big-logo {
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 30px 15px;
+  
+  h3 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.05em;
+  }
+  h4 {
+    font-size: 15px;
+    color: white;
+  }
+}
+}

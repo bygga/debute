@@ -1,0 +1,48 @@
+# Site settings
+title: Débute
+description:  "L'actualité quotidienne en français simplifié. actualité française pour immigrant et personnes qui veulent apprendre le français."
+sidebar_description: "Débute est un journal qui explique l'actualité avec un français simplifié. Ces actualités sont écrites pour les personnes qui veulent apprendre la langue française ou bien ont des difficultés à lire."
+analytics: #Google analytics code in the format XX-nnnnnnnn-n
+baseurl: "" #important: start with /
+url: "https://debute.fr"
+permalink: /:year/:month/:day/:title
+
+gems:
+  - jekyll-sitemap
+
+# Menu
+paginate: 5
+paginate_path: "/articles/page/:num"
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "gulpfile.js", "Gruntfile.js", "package.json", "node_modules"]
+
+
+nav:
+- title: "Découvrir Débute"
+  href: "/decouvrir-debute/"
+
+- title: "Contact"
+  href: "/contact/"
+
+# - title: "Qui sommes nous ?"
+#   href: "/qui-sommes-nous/"
+
+# - title: "Pourquoi Pedagoa"
+#   href: "/pourquoi-pedagoa/"
+
+cat_widget:
+- title: "France"
+  href: "/france/"
+
+- title: "International"
+  href: "/international/"
+
+- title: "Sport"
+  href: "/sport/"
+
+- title: "Magazine"
+  href: "/magazine/"

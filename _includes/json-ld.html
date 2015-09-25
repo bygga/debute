@@ -1,0 +1,10 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "headline": "{{ page.title }}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "description": "{{ page.description }}",
+  "articleBody": "{{ content | strip_html }}"
+}
+</script>

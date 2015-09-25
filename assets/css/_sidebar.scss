@@ -1,0 +1,133 @@
+/*====================================================
+	sidebar
+====================================================*/
+.sidebar {
+  padding-left: 0;
+  margin-top: 36px;
+  z-index: 1;
+  padding-right: 0px !important;
+  background: $dark-background-color;
+}
+.sidebar .widget {
+  padding: 27px 36px;
+  background: #f9f9f9;
+  max-width: 400px;
+  margin-bottom: 36px;
+}
+.sidebar .widget .title {
+  margin: 0 0 18px 0;
+  border-bottom: 1px dashed #b0b0b0;
+  padding: 0 0 9px 0;
+}
+.sidebar .widget .tag-cloud a {
+  color: #606060;
+  background: #ff7b42;
+  color: #ffffff;
+  margin: 0 6px 6px 0;
+  padding: 6px 9px;
+  line-height: 1em;
+  display: inline-block;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.sidebar .widget .tag-cloud a:hover {
+  background: #383838;
+}
+.sidebar .widget .recent-post .recent-single-post {
+  margin-bottom: 9px;
+  padding-left: 9px;
+}
+.sidebar .widget .recent-post .recent-single-post a {
+  color: #606060;
+  text-decoration: underline;
+}
+.sidebar .widget .recent-post .recent-single-post a .post-thumb {
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  background-position: center;
+  background-color: #383838;
+  text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.sidebar .widget .recent-post .recent-single-post a .post-thumb i {
+  line-height: 80px;
+  color: #ffffff;
+  font-size: 32px;
+}
+.sidebar .widget .recent-post .recent-single-post a .post-info {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+  margin-left: 89px;
+  color: #383838;
+}
+.sidebar .widget .recent-post .recent-single-post a .post-info .date {
+  font-size: 14px;
+  color: #b0b0b0;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+  font-weight: 400;
+}
+.sidebar .widget .recent-post .recent-single-post a:hover .post-info {
+  color: #ff7b42;
+}
+.sidebar .widget .recent-post .recent-single-post a:hover .post-info .date {
+  color: #ff7b42;
+}
+.sidebar .widget .newsletter p {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+.sidebar .widget .newsletter .input-group {
+  display: block;
+  margin-bottom: 18px;
+}
+.sidebar .widget .newsletter .input-group input[type="email"],
+.sidebar .widget .newsletter .input-group input[type="submit"] {
+  width: 100%;
+}
+.sidebar .widget .fb {
+  text-align: center;
+}
+.sidebar .widget .twitter {
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .sidebar {
+    padding-left: 15px;
+  }
+  .sidebar .widget {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .sidebar .widget {
+    max-width: 80%;
+  }
+}
+@media (max-width: 599px) {
+  .sidebar .widget {
+    max-width: 90%;
+  }
+}

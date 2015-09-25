@@ -1,0 +1,51 @@
+---
+---
+{% include header.html %}
+
+<div class="post-area-wrap-inner">
+	<!-- start article -->
+	<article class="single-post-wrap">
+		<header class="post-header">
+			<div class="category-box">
+				<h5 class="{{ page.category | downcase }}">{{ page.category }}</h5>
+			</div>
+			<h2 class="title">{{ page.title }}</h2>
+			<div class="post-meta">
+				<span class="date">
+	                Publi&eacute; le {% assign m = page.date | date: "%-m" %}
+					{{ page.date | date: "%d" }}
+					{% case m %}
+					  {% when '1' %}Janvier
+					  {% when '2' %}F&eacute;vrier
+					  {% when '3' %}Mars
+					  {% when '4' %}Avril
+					  {% when '5' %}Mai
+					  {% when '6' %}Juin
+					  {% when '7' %}Juillet
+					  {% when '8' %}Ao&ucirc;t
+					  {% when '9' %}Septembre
+					  {% when '10' %}Octobre
+					  {% when '11' %}Novembre
+					  {% when '12' %}D&eacute;cembre
+					{% endcase %}
+					{{ page.date | date: "%Y" }}
+	            </span>
+			</div>
+		</header>
+		<div class="post-entry">
+			{{ content }}
+		</div>
+	    <footer class="post-footer">
+	    	<div class="tag-list">
+	            Source : <a href="{{ page.source.url }}">{{ page.source.title }}</a>
+	        </div>
+	    </footer>
+	</article>
+	<!-- end article -->
+	{% include share.html %}
+ 
+
+</div>
+
+{% include sidebar.html %}
+{% include footer.html %}

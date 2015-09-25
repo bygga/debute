@@ -1,0 +1,14 @@
+---
+---
+{% include header.html %}
+
+            	<div class="post-area-wrap-inner home">
+            		{% for post in paginator.posts %}
+            			{% include home-article.html %}
+            		{% endfor %}
+                </div>
+                
+{% include pagination.html %}
+            
+{% include sidebar.html %}
+{% include footer.html %}

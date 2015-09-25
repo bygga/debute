@@ -1,0 +1,37 @@
+@import 'variables';
+@import 'nav';
+@import 'body';
+@import 'pagination';
+@import 'sidebar';
+@import 'footer';
+@import 'form';
+
+
+html, 
+body {
+	font-family: $body-font;
+	font-size: $font-size;
+	color: $text-color;
+	line-height: 2em;
+	font-weight: 400;
+	background: $light-background-color;
+}
+
+.top-header, .man-content-wrap, .main-footer {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $title-color;
+	font-weight: 700;
+	font-family: $title-font;
+}
+
+a {
+	color: $link-color;
+}
+a:hover,
+a:focus {
+  color: $link-color-hover;
+}
