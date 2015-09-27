@@ -3,7 +3,7 @@ title: Débute
 description:  "L'actualité quotidienne en français simplifié. actualité française pour immigrant et personnes qui veulent apprendre le français."
 sidebar_description: "Débute est un journal qui explique l'actualité avec un français simplifié. Ces actualités sont écrites pour les personnes qui veulent apprendre la langue française ou bien ont des difficultés à lire."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
-baseurl: "/debute" #important: start with /
+baseurl: "" #important: start with /
 url: "https://debute.fr"
 permalink: /:year/:month/:day/:title
 
